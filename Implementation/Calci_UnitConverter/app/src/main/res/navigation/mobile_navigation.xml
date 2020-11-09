@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/calculator">
+    <fragment
+        android:id="@+id/calculator"
+        android:name="com.example.calci_unitconverter.Calculator"
+        android:label="Calculator" >
+        <action
+            android:id="@+id/action_calculator_to_unit_converter2"
+            app:destination="@id/unit_converter2" />
+        <action
+            android:id="@+id/action_calculator_to_romtodec2"
+            app:destination="@id/romtodec" />
+    </fragment>
+    <fragment
+        android:id="@+id/unit_converter2"
+        android:name="com.example.calci_unitconverter.unit_converter"
+        android:label="Unit Converter"
+        tools:layout="@layout/fragment_unit_converter">
+        <action
+            android:id="@+id/action_unit_converter2_to_temperature"
+            app:destination="@id/temperature" />
+        <action
+            android:id="@+id/action_unit_converter2_to_currency"
+            app:destination="@id/currency" />
+        <action
+            android:id="@+id/action_unit_converter2_to_length"
+            app:destination="@id/length" />
+    </fragment>
+    <fragment
+        android:id="@+id/currency"
+        android:name="com.example.calci_unitconverter.currency"
+        android:label="Currency Conversion"
+        tools:layout="@layout/fragment_currency" />
+    <fragment
+        android:id="@+id/temperature"
+        android:name="com.example.calci_unitconverter.temperature"
+        android:label="Temperature Conversion"
+        tools:layout="@layout/fragment_temperature" />
+    <fragment
+        android:id="@+id/length"
+        android:name="com.example.calci_unitconverter.length"
+        android:label="Length Conversion"
+        tools:layout="@layout/fragment_length" />
+    <fragment
+        android:id="@+id/romtodec"
+        android:name="com.example.calci_unitconverter.romtodec"
+        android:label="fragment_romtodec"
+        tools:layout="@layout/fragment_romtodec" />
+
+</navigation>
