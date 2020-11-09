@@ -5,64 +5,98 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B0EDF4"
     tools:context=".romtodec">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="326dp"
+        android:layout_height="587dp"
+        android:background="#1B9478"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
     <EditText
         android:id="@+id/roman_input"
-        android:layout_width="243dp"
-        android:layout_height="63dp"
+        android:layout_width="251dp"
+        android:layout_height="45dp"
+        android:background="#B0EDF4"
+        android:gravity="center"
         android:hint="Enter Roman Number"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
+        app:layout_constraintVertical_bias="0.103" />
+
     <EditText
         android:id="@+id/Romanswer"
-        android:layout_width="243dp"
-        android:layout_height="63dp"
+        android:layout_width="260dp"
+        android:layout_height="46dp"
+        android:background="#1B9478"
+        android:gravity="center"
         android:hint="Decimal output"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336" />
+        app:layout_constraintVertical_bias="0.293" />
+
     <EditText
         android:id="@+id/decimal_input"
-        android:layout_width="243dp"
-        android:layout_height="63dp"
+        android:layout_width="242dp"
+        android:layout_height="56dp"
+        android:background="#B0EDF4"
+        android:gravity="center"
         android:hint="Enter Decimal Input"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.499" />
+
     <EditText
         android:id="@+id/decanswer"
-        android:layout_width="243dp"
-        android:layout_height="63dp"
+        android:layout_width="253dp"
+        android:layout_height="50dp"
+        android:background="#1B9478"
+        android:gravity="center"
         android:hint="Roman Output"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
+        app:layout_constraintVertical_bias="0.74" />
+
     <Button
         android:id="@+id/currency_convert2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
         android:text="Convert to decimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.193" />
+
     <Button
         android:id="@+id/currency_convert"
         android:layout_width="wrap_content"
@@ -70,8 +104,41 @@
         android:text="Convert to Roman"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintVertical_bias="0.623" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="238dp"
+        android:layout_height="21dp"
+        android:background="#1B9478"
+        android:gravity="center"
+        android:text="Convert Roman to Decimal"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="255dp"
+        android:layout_height="23dp"
+        android:background="#1B9478"
+        android:gravity="center"
+        android:text="Convert Decimal to Roman"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
