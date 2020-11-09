@@ -39,6 +39,7 @@ public class Calculator extends Fragment {
     private static final char MULTIPLICATION = 'x';
     private static final char DIVISION = '/';
     private static final char MODULO = '%';
+    private static final char SIGN = '+';
 
     private char CURRENT_ACTION;
 
@@ -216,17 +217,24 @@ public class Calculator extends Fragment {
             }
         });
 
+        binding.sign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                computeCalculation();
+                CURRENT_ACTION = SIGN;
+                binding.textView2.setText(null);
+            }
+        });
+
         binding.equals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 computeCalculation();
-                binding.textView.setText(binding.textView.getText().toString() +
-                        decimalFormat.format(valueTwo) + " = " + decimalFormat.format(valueOne));
+                binding.textView.setText(decimalFormat.format(valueOne));
                 valueOne = Double.NaN;
                 CURRENT_ACTION = '0';
             }
         });
-
         binding.clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -264,6 +272,16 @@ public class Calculator extends Fragment {
                 valueOne = this.valueOne / valueTwo;
             else if(CURRENT_ACTION == MODULO)
                 valueOne = this.valueOne % valueTwo;
+            else if(CURRENT_ACTION == SIGN){
+                if(valueOne>0) {
+                    valueOne = this.valueOne * (-1);
+                    binding.textView.setText("-" + decimalFormat.format(valueOne));
+                }
+                else{
+                    valueOne = this.valueOne * (-1);
+                    binding.textView.setText("+" + decimalFormat.format(valueOne));
+                }
+            }
         }
         else {
             try {
