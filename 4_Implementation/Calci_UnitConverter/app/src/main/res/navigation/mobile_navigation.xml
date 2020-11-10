@@ -48,7 +48,7 @@
     <fragment
         android:id="@+id/romtodec"
         android:name="com.example.calci_unitconverter.romtodec"
-        android:label="fragment_romtodec"
+        android:label="Roman to Decimal Converter"
         tools:layout="@layout/fragment_romtodec" />
 
 </navigation>

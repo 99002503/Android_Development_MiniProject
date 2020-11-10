@@ -24,12 +24,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Calculator/UnitConverter"
+        android:text="Calculator/UnitConverter/RomanDecimalConverter"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="suraj.marthy@ltts.com" />
+        android:text="99002535;99002549;99002503" />
 </LinearLayout>
